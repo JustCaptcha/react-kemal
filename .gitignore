@@ -1,0 +1,14 @@
+/doc/
+/bin/
+
+# js
+/node_modules
+/public/js/bundle.js
+yarn-error.log
+
+# crystal
+/lib
+/.shards/
+
+# temp
+/temp

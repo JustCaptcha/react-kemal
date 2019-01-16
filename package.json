@@ -1,0 +1,56 @@
+{
+  "name": "react-kemal",
+  "description": "Webapp boilerplate using react and kemal as backend",
+  "author": "Albert Hofmann <higashi166@gmail.com> (http://github.com/JustCaptcha)",
+  "license": "MIT",
+  "version": "0.1.0",
+  "keywords": [
+    "react",
+    "universal",
+    "webpack",
+    "kemal",
+    "starter",
+    "boilerplate",
+    "babel"
+  ],
+  "scripts": {
+    "watch": "better-npm-run watch",
+    "build": "better-npm-run build",
+    "server": "crystal run ./src/server.cr",
+    "s": "crystal run ./src/server.cr"
+  },
+  "betterScripts": {
+    "watch": {
+      "command": "webpack --mode development --progress --watch webpack/webpack.config.js"
+    },
+    "build": {
+      "command": "webpack"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "8.0.5",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "better-npm-run": "^0.1.1",
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}

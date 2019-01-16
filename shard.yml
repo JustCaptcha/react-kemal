@@ -1,0 +1,17 @@
+name: creact
+version: 0.1.0
+
+authors:
+  - JustCaptcha <higashi166@gmail.com>
+
+targets:
+  creact:
+    main: src/creact.cr
+
+crystal: 0.24.1
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal

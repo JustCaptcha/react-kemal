@@ -1,0 +1,16 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.homePage {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePage > h1 {
+    text-align: center;
+    color: purple;
+}
