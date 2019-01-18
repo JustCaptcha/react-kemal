@@ -14,17 +14,21 @@
     "babel"
   ],
   "scripts": {
+    "dev": "better-npm-run dev",
     "watch": "better-npm-run watch",
     "build": "better-npm-run build",
     "server": "crystal run ./src/server.cr",
     "s": "crystal run ./src/server.cr"
   },
   "betterScripts": {
+    "dev": {
+      "command": "webpack-dev-server --hot --progress --config ./internals/webpack/webpack.config.dev.babel.js"
+    },
     "watch": {
       "command": "webpack --mode development --progress --watch webpack/webpack.config.js"
     },
     "build": {
-      "command": "webpack"
+      "command": "cross-env NODE_ENV=production webpack --config ./internals/webpack/webpack.config.prod.babel.js"
     }
   },
   "eslintConfig": {
@@ -37,8 +41,11 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@babel/register": "^7.0.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -48,9 +55,19 @@
     "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "better-npm-run": "^0.1.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
+    "csv-loader": "^3.0.2",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
+    "xml-loader": "^1.2.1"
   }
 }

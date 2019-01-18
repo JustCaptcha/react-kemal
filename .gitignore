@@ -6,6 +6,10 @@
 /public/js/bundle.js
 yarn-error.log
 
+# output
+/dist
+/build
+
 # crystal
 /lib
 /.shards/

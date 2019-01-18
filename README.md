@@ -2,9 +2,11 @@
 
 ### What were using
 
-* React 16
-* Webpack 4
 * Kemal
+* React
+* Semantic-ui-react
+* Webpack 4
+* Webpack dev server
 
 ### To run
 
@@ -23,6 +25,12 @@ yarn install
 ```
 ```
 shards install
+```
+
+* Run development hot relouding server
+
+```
+yarn run dev
 ```
 
 * Build to production:
